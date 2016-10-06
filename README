@@ -1,5 +1,14 @@
 Make soap requests with a Dynamics CRM server. On-prem or online!
 
+# NOTE - must escape the password
+
+
+password = password.replace('"', "&quot;")
+password = password.replace("'", "&apos;")
+password = password.replace('<', "&lt;")
+password = password.replace('>', "&gt;")
+password = password.replace('&', "&amp;")
+
 # Installation
 
 `pip install -r requirements.txt`
