@@ -1,6 +1,6 @@
 Make soap requests with a Dynamics CRM server. On-prem or online!
 
-# NOTE - must escape the password
+# NOTE - must escape the password before sending it in
 ```
 password = password.replace('"', "&quot;")
 password = password.replace("'", "&apos;")
